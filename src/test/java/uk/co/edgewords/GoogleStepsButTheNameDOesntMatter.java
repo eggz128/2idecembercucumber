@@ -42,7 +42,7 @@ public class GoogleStepsButTheNameDOesntMatter {
         GoogleHomePOM home = new GoogleHomePOM(driver);
         home.acceptCookies();
         pageTitle = driver.getTitle();
-        driver.switchTo().alert().dismiss();
+        //driver.switchTo().alert().dismiss();
     }
     @When("^I search for \"([^\"]*)\"$")
     public void i_search_for(String searchTerm) {
